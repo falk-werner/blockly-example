@@ -23,6 +23,13 @@ npm run make
 npx electron-forge make --platform win32
 ````
 
+### Build using Docker
+
+````
+docker buildx build --rm -f docker/Dockerfile --tag blockly-builder .
+docker run -it blockly-builder
+````
+
 ## Dependencies
 
 - npm
