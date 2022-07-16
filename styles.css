@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.device {
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c0c0c0;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.device th {
+    border-bottom: 1px solid black;
+}
+
+.device th:first-child,
+.device td:first-child {
+    border-right: 1px solid black;
+}
+
+.device td:nth-child(1) {
+    padding-right: 20px;
+}
+
+.device td:nth-child(2) {
+    padding-left: 20px;
+}
+
+.device input {
+    margin-left: 1ch;
+    margin-right: 1ch;
+}
+
+.device .on,
+.device .off {
+    vertical-align: center;
+    height: 1ch;
+    width: 1ch;
+    margin-left: 1ch;
+    margin-right: 1ch;
+    border-radius: 50%;    
+    display: inline-block;
+}
+
+.device .on {
+    background-color:rgb(24, 172, 24);
+}
+
+.device .off {
+    background-color:#909090;
+}

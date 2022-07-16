@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: *; media-src *">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Blockly Example</title>
+  </head>
+  <body>
+
+    <div style="display: flex; flex-direction: column; height: 100%;">
+      <div>
+        <input type="button" id="update_button" value="Update" />
+        <input type="button" id="save_button" value="Save as..." />
+        <input type="button" id="load_button" value="Load..." />
+        <input type="file" id="file_chooser" style="display: none;" />
+        <input type="button" id="export_js" value="Export JavaScript..." />
+      </div>
+      <div>
+        <table id='device' class='device'>
+          <tr><th>IN</td><th>OUT</td></tr>
+          <tr><td><input data-id='in_0' type="checkbox" /><span>IN 0</span></td><td><span>OUT 0</span> <span data-id='out_0' class="off"></span></td></tr>
+          <tr><td><input data-id='in_1' type="checkbox" /><span>IN 1</span></td><td><span>OUT 1</span> <span data-id='out_1' class="off"></span></td></tr>
+          <tr><td><input data-id='in_2' type="checkbox" /><span>IN 2</span></td><td><span>OUT 2</span> <span data-id='out_2' class="off"></span></td></tr>
+          <tr><td><input data-id='in_3' type="checkbox" /><span>IN 3</span></td><td><span>OUT 3</span> <span data-id='out_3' class="off"></span></td></tr>
+        </table>
+      </div>
+      <div id="blocklyDiv" style="flex: 1;" x_style="height: 480px; width: 600px;"></div>
+    </div>
+
+    <script src="./renderer.js"></script>
+    <script type="text/javascript" src="./frontend/startup.js"></script>
+    <script type="text/javascript" src="./frontend/device.js"></script>
+    <script type="text/javascript" src="./frontend/toolbox.js"></script>
+    <script type="text/javascript" src="./frontend/default_workspace.js"></script>
+
+    <script type="text/javascript" src="./frontend/extern/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="./frontend/extern/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="./frontend/extern/blockly/msg/js/en.js"></script>
+    <script type="text/javascript" src="./frontend/extern/blockly/javascript_compressed.js"></script>
+    <script type="text/javascript" src="./frontend/extern/blockly/custom-dialog.js"></script>
+  </body>
+</html>

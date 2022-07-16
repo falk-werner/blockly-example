@@ -1,0 +1,3 @@
+function getDefaultWorkspace() {
+    return {"blocks":{"languageVersion":0,"blocks":[{"type":"variables_set","id":"ft5:z3mw^(4ef9HNNw*U","x":164,"y":59,"fields":{"VAR":{"id":"(}IgM}Q^QzF/LQ;^1AA#"}},"inputs":{"VALUE":{"block":{"type":"digital_read","id":"5Cmb.M.N6Wt3;hjLyS6g","inputs":{"ID":{"block":{"type":"math_number","id":"-6AVfDonLprG2~h-D89_","fields":{"NUM":0}}}}}}},"next":{"block":{"type":"digital_write","id":"yiHU,qxm9l/$fhH=h^fH","inputs":{"ID":{"block":{"type":"math_number","id":"hd!1_!Y:7HqAfs7-$5oh","fields":{"NUM":0}}},"VALUE":{"block":{"type":"variables_get","id":"CQUg|;tbdU5A1WDh?9S(","fields":{"VAR":{"id":"(}IgM}Q^QzF/LQ;^1AA#"}}}}}}}}]},"variables":[{"name":"in_0","id":"(}IgM}Q^QzF/LQ;^1AA#"}]};
+}
