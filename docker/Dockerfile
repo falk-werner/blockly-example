@@ -31,6 +31,7 @@ RUN . /root/.bashrc && npm run make
 #        wine64 \
 #        mono-complete
 #
+#RUN update-alternatives --install /usr/bin/wine64 wine64 /usr/bin/wine64-stable 1
 #RUN . /root/.bashrc && npx electron-forge make --platform win32
 
 ENTRYPOINT ["bash"]
